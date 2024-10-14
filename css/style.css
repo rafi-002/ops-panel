@@ -1,0 +1,672 @@
+#graphWaiting,#graphExpressia{
+	/*width:280px;*/
+	width:96%;
+	height:180px;
+	display: inline-block;
+	margin: 1em;
+}
+
+a{text-decoration:none;}
+a:visited{color:#00F;}
+a:hover{text-decoration:underline;}
+a:active{color:#F00;}
+img{border:0 none;}
+select{-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+
+ul.direction-flexible-text {
+    padding: 0;
+    margin: 0;
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+}
+
+input[type="number"] {
+   width:50px;
+}
+
+ul.direction-flexible-text li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.normal{font-weight:normal;}
+.bold{font-weight:bold;}
+.roundedCorner4{-moz-border-radius:4px;	-webkit-border-radius:4px; border-radius:4px; 
+	border: 1px solid rgba(0, 0, 0, 0.2) !important;}
+.roundedCorner5{-moz-border-radius:24px;	-webkit-border-radius:24px; border-radius:24px;}
+
+a.closeButton{
+	height:18px; 
+	width:18px;
+	float:right; 
+	position:relative; 
+	top:0px; 
+	right:0px; 
+	background: url(../images/close.png) no-repeat;
+	background-size: contain;
+	outline: 0 none;
+	}
+
+/************* Tickets ****************/
+#tickets .firstColumn,#searchTickets .firstColumn,#branchTickets .firstColumn,#poolTickets .firstColumn{text-align:center; height:32px; width:50px !important;}
+#tickets .middleColumn,#searchTickets .middleColumn,#branchTickets .middleColumn,#poolTickets .middleColumn{text-align:center; height:32px; width:250px !important;}
+#tickets .lastColumn,#searchTickets .lastColumn,#branchTickets .lastColumn,#poolTickets .lastColumn{text-align:center; height:32px; width:50px !important;}
+#tickets .actionColumn,#searchTickets .actionColumn,#branchTickets .actionColumn,#poolTickets .actionColumn{text-align:center; height:32px; width:60px !important;}
+#tickets .notesColumn,#searchTickets .notesColumn,#branchTickets .notesColumn,#poolTickets .notesColumn{text-align:center; height:32px; width:50px !important;}
+
+#tickets .notes,#searchTickets .notesn,#branchTickets .notes,#poolTickets .notes{
+    background:transparent url(../images/notesIcon.png) no-repeat center;
+    padding: 5px 0 0;
+    display:inline-block; 
+    width:26px; 
+    height:26px;
+}
+
+#tickets .ticketNumSpan,#searchTickets .ticketNumSpan,#branchTickets .ticketNumSpan,#poolTickets .ticketNumSpan{
+    font-size:18px;
+}
+
+#tickets .transferTicket,#searchTickets .transferTicket,#branchTickets .transferTicket,#poolTickets .transferTicket{
+    background:transparent url(../images/moveIcon.png) no-repeat left;
+    padding: 5px 0 0;
+    display:inline-block; 
+    width:18px; 
+    height:18px;
+}
+
+#tickets .removeTicket,#searchTickets .removeTicket,#branchTickets .removeTicket,#poolTickets .removeTicket{
+    background:transparent url(../images/minusIcon.png) no-repeat left; 
+    padding: 5px 0 0;
+    display:inline-block; 
+    width:26px;
+    height:26px;
+}
+
+#tickets .callTicket,#searchTickets .callTicket,#branchTickets .callTicket,#poolTickets .callTicket{
+    background:transparent url(../images/cherryPick.gif) no-repeat center; 
+    padding: 5px 0 0;
+    display:inline-block; 
+    width:30px;
+    height:40px;
+}
+#tickets .transferTicket:hover,#searchTickets .transferTicket:hover,#branchTickets .transferTicket:hover,#poolTickets .transferTicket:hover,
+#tickets .removeTicket:hover,#searchTickets .removeTicket:hover,#branchTickets .removeTicket:hover,#poolTickets .removeTicket:hover,
+#tickets .callTicket:hover,#searchTickets .callTicket:hover,#branchTickets .callTicket:hover,#poolTickets .callTicket:hover{
+    background-color: transparent !important;
+
+}
+/* Modal popup stuff*/
+.modalPage{position:absolute; top:0; left:0; width:100%; height:100%; display:none;}
+.modalPage h2 {}
+
+.smallText {font-size:0.8em;}
+.modalContainer{z-index:1300;}
+.modalOpacityDiv{filter:alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity:0.7; opacity:0.7; position:absolute; left:0;
+    top:0; bottom:0; right:0; z-index:1100; background:#999;}
+.modalContainer select{background:#fff; border:1px solid #9cb4d8; font-size:12px; min-width:206px; margin: 0;}
+
+.branchForm{
+	width:450px;
+}
+
+.settingsForm{
+	width:450px;
+}
+.settingsAdminForm{
+	width:1240px;
+}
+.disabledModalForm{
+    width: 500px;
+}
+
+.queueGroupsAdminForm{
+	width:1000px;
+}
+
+.queueGroupsEditForm{
+	width:500px;
+}
+
+.serviceExpandForm{
+	width:500px;
+}
+.searchForm,.ticketsForm,.branchTicketsForm,.poolTicketsForm{
+	width:95%;
+	max-width: 1200px;
+}
+
+.transferForm{
+	width:95%;
+	max-width: 1200px;
+}
+
+/************************** TRANSFER ************************/
+
+/***************** Transfer ticket ******************/
+#transferTicketQueueToQueueTable .firstColumn,
+#transferQueueToServicePointPoolTable .firstColumn,
+#transferQueueToStaffPoolTable .firstColumn,
+#transferQueues .firstColumn,
+#transferTicketToStaffPoolTable .firstColumn,
+#transferTicketToServicePointPoolTable .firstColumn {text-align:center;}
+
+#transferTicketQueueToQueueTable .middleColumn,
+#transferQueueToServicePointPoolTable .middleColumn,
+#transferQueueToStaffPoolTable .middleColumn,
+#transferQueues .middleColumn,
+#transferTicketToStaffPoolTable .middleColumn,
+#transferTicketToServicePointPoolTable .middleColumn {text-align:center;}
+
+#transferTicketQueueToQueueTable .middleColumn {min-width: 100px;}
+
+#transferTicketQueueToQueueTable .lastColumn,
+#transferQueueToServicePointPoolTable .lastColumn,
+#transferQueueToStaffPoolTable .lastColumn,
+#transferQueues .lastColumn,
+#transferTicketToStaffPoolTable .lastColumn,
+#transferTicketToServicePointPoolTable .lastColumn {text-align:center;}
+
+#transferTicketQueueToQueueTable .queueNameSpan,
+#transferQueueToStaffPoolTable .staffNameSpan,
+#transferQueueToServicePointPoolTable .servicePointNameSpan,
+#transferQueues .queueNameSpan,
+#transferTicketToStaffPoolTable .staffNameSpan,
+#transferTicketToServicePointPoolTable .servicePointNameSpan {
+    vertical-align: 50%;
+}
+
+#transferQueueToStaffPoolTable .firstColumn  {min-width: 150px; text-align:left;}
+#transferQueueToStaffPoolTable .middleColumn  {}
+#transferQueueToStaffPoolTable .lastColumn  {min-width: 200px;}
+
+#transferQueueToServicePointPoolTable .firstColumn  {min-width: 250px; text-align:left;}
+#transferQueueToServicePointPoolTable .middleColumn  {}
+#transferQueueToServicePointPoolTable .lastColumn  {min-width: 100px;}
+
+.profileForm{
+	width:450px;
+}
+
+.userLogoutForm, .visitRemoveForm,  .visitsRemoveForm{
+	width:450px;
+}
+
+.webCamForm{
+	width:80%;
+}
+.slaForm{
+	width:450px;
+}
+.accessRightsForm{
+	width:450px;
+}
+
+.branchQueueGroupList{
+	min-height:400px
+}
+
+#message, #error, #uttError {
+    position:fixed;
+    z-index: 9999;
+    visibility: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 3px 15px 0 15px;
+    width: 98%;
+}
+
+#uttError {
+	top:60px;
+	text-align:center;
+	background: #FAD7DF;
+	min-height:25px;
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 14px;
+	line-height: 25px  !important;
+	letter-spacing: 0.1px;
+	color: rgba(0, 0, 0, 0.6);
+
+}
+
+#queueGroupView{
+	color: #2d2d2d;;
+}
+
+#queueGroupView tr,#queueGroupView tr td{
+	height:50px !important;
+	word-wrap: break-word;
+}
+
+.labelItem {
+	color: #2d2d2d;
+}
+
+
+.logoutForm{max-width:530px; text-align:center;}
+
+
+
+.branchForm, .settingsForm, .settingsAdminForm, .ticketsForm, .branchTicketsForm, .poolTicketsForm, .searchForm, .transferForm, .queueGroupsEditForm, 
+.queueGroupsAdminForm, .slaForm, .profileForm, .userLogoutForm, .serviceExpandForm, .webCamForm, .accessRightsForm, .disabledModalForm, .visitRemoveForm,
+.visitsRemoveForm, .transferFormSp, .transferFormStaff, .accessibilityDialog {
+    position:relative; 
+	border:0px solid transparent; 
+	background-color:#fefefe; 
+	top:0; 
+	padding:5px; 
+	margin:5% auto; 
+	z-index:1310;
+}
+.displayQueueSpinner{
+	background-color: #f5f5f5; 
+	margin-top: 25%; 
+	white-space: nowrap; 
+	width: 365px; 
+	overflow: hidden;
+    text-overflow: ellipsis;}
+/* End modal popup stuff*/
+
+/*********** Popup ******************/
+.popup {
+	border: 1px solid #C0C0C0;
+	background-color: #FFFFFF;
+	position:absolute;
+	width:300px;
+	max-height:200px;
+	display:none;
+	z-index:9999;
+	padding:2px;
+	padding:4px 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	overflow-y:auto;
+}
+
+#userName, #workstation, #branch{font-weight:bold;}
+.applySettingsButton{font-size:11px; height:20px; margin:0 5px; text-transform:uppercase;}
+input::-moz-focus-inner /*Remove button padding in FF*/{border: 0; padding: 0;}
+#appShortcuts{position:absolute; right:0; left:auto; top:6px; margin:5px 10px;}
+
+#modulesContainer{
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width:840px;
+    margin:80px 15px;
+}
+
+#modulesContainer h2{
+    background: #123456 url(/images/bg_header.gif) repeat-x;
+    color:white;
+    font-size:16px;
+    line-height:19px;
+    margin:0;
+    padding:4px 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+th {
+	font-weight: bold;
+}
+
+.subheader {
+    background: transparent;
+    font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 4px 8px;
+    /*border-radius: 5px 5px 5px 5px;*/
+}
+
+#displayQueueSpinnerText {
+    color:black;
+    font-size:16px;
+    line-height:19px;
+    margin:0;
+    padding:5px 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    float: left;
+    width: 80%;
+}
+
+.module{
+    min-height:208px;
+    background:transparent;
+}
+
+.moduleContentContainer{
+    height:180px;
+    overflow:hidden;
+    border: 1px #EDEDED solid;
+    border-top: 0;
+    background: white;
+}
+
+.submodule {
+    min-height:104px;
+    background:transparent;
+}
+
+.submoduleContentContainer{
+    height:76px;
+    overflow:hidden;
+    border: 1px #EDEDED solid;
+    border-top: 0;
+    background: white;
+}
+.navbar-fixed-top{position:relative;}
+
+
+.settings {text-align:center; position:relative; bottom:2px;}
+
+/*********** Data panels ******************/
+#branchData {
+	width:100%;
+	text-align:center;
+}
+.dataPanel {
+	background:#fff;
+	color:#000;
+	border:	1px solid #e0e0e0; 
+	width:180px; 
+	height:100px;
+	display:block;
+	float:left;
+	text-align:	left;
+	margin:5px;
+	
+	top:80px;
+	left:20px;
+}
+.dataPanel .dataHeader {
+	background: url("/images/bg_header.gif") repeat-x scroll 0 0 #123456;
+	border-radius: 5px 5px 5px 5px;
+	height:40px; 
+	font-size: 14px;
+	color:white;
+	text-align:left;
+	font-weight: bold;
+	border-bottom: 1px solid #e0e0e0;
+}
+.dataPanel .dataHeader .title {
+	position:absolute; 
+	top:15px;
+}
+.dataPanel IMG {
+	padding:5px;
+}
+.dataPanel .metric {
+	height:60px;
+	font-size:50px;
+	font-weight:bold;
+	/*position:absolute;*/
+	margin-top:5px;
+	color:#444;
+	text-align:center;
+	width:100%;
+	line-height: 50px;
+}
+
+.dataPanel .webCam {
+	height:30px;
+	font-size:15px;
+	font-weight:bold;
+	/*position:absolute;*/
+	margin-top:15px;
+	color:#444;
+	text-align:center;
+	width:100%;
+	line-height: 30px;
+}
+
+.dataPanel .metric .time {
+	font-size:40px;
+}
+
+/** Main container for content **/
+#containerWrapper {
+	min-height: 100%;
+}
+
+#mainGraphcontainer {
+	overflow: auto;
+	overflow-y: visible;
+	width: 100%;
+	top: 61px;
+/*	left:10px;	*/
+	position: absolute;
+	z-index: 1000;
+}
+
+#historyGraphcontainer {
+	overflow: auto;
+	overflow-y: visible;
+	width: 100%;
+	top: 61px;
+/*	left:10px;	*/
+	position: absolute;
+}
+
+#graphPanel, #historyPanel{
+	margin-top:10px;
+	margin-left:10px;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	width: 98% ;
+}
+
+#branchPanel, #appointPanel, #queueSpPanel, #queuePanel, #servicepointPanel , #npsPanel, #webcamPanel, #regionPanel   {
+	margin-top:10px;
+	left: 0px;
+	/*width: 100% ;*/
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+#queueSpPanel, #queuePanel, #servicepointPanel , #npsPanel, #webcamPanel  {
+	visibility: hidden;
+}
+
+/************* Generic table stuff ***************/
+ #tickets, #branchTickets,#poolTickets, #searchTickets,  #queues,  #workstations, #sla {
+	width:100%; 
+	background:transparent; 
+	border-collapse:collapse;
+}
+ 
+#tickets td,  #branchTickets td,#poolTickets td, #searchTickets td, #queues td, #workstations td ,#sla td{
+	padding:5px 10px; 
+	border-bottom:1px solid #c0c0c0;
+}
+td, tr {
+	height:30px
+}
+.alignTop td{
+	vertical-align:top ;
+}
+
+.alignMiddle tr td{
+	vertical-align:middle ;
+}
+
+
+/*.evenRow{background:#ebebeb;}*/
+.lastCol{text-align:right;}
+.hide{display:none;}
+.margin-top {
+    margin-top: 5px !important;
+}
+
+.subTable td{
+    border: 0;
+    border-bottom: 0 !important;
+    padding-left:50px;
+}
+
+.subTable tr:hover{
+    background-color: #FFDEAD;
+    border: solid 1px #efefef;
+    cursor: pointer;
+}
+
+.header {
+    min-height:58px !important;
+    height: 58px;
+    background:url(/images/glow.png) -80px 0 no-repeat;
+    border-bottom:3px #eee solid;
+}
+
+.header table {
+    width: 100%;
+    height: auto;
+}
+
+.warningmessage {
+    padding: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+    position:relative;
+}
+
+
+#settingsDetail {
+	width:520px;
+	border: solid 1px transparent;
+	-moz-border-radius:5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+    border-radius:5px 5px 5px 5px;
+	margin:5px;
+	padding:5px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #tabs {
+    margin: 0;
+    padding: 0;
+    display: inherit;
+    flex-direction: row;
+  }
+  #tabs [data-tab] {
+    padding: 0.5em 1em;
+    list-style: none;
+  }
+  #tabs [data-tab] a {
+    text-decoration: none;
+    color: #000;
+  }
+  /*
+  #tabs [data-tab].active {
+    border-bottom: 3px solid #123456;
+  }
+
+  #tabs [data-tab].active a {
+    font-weight: 700;
+    color: #123456;
+  }						   
+	*/  
+
+  #tabs [data-tab].active {
+	height:30px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	font-style: normal;
+	font-weight: normal;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;  
+    font-weight: 500;
+    color: rgba(0, 121, 194, 1);
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: rgba(0, 121, 194, 1);
+
+  }
+	#tabs [data-tab].active a {
+		color: rgba(0, 121, 194, 1);
+	}
+
+  #tabs [data-tab].inactive,   #tabs [data-tab].inactive a {
+	height:30px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	font-style: normal;
+	font-weight: normal;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;  
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.6);
+
+  }
+
+  #tabs [data-tab].inactive:hover {
+  	background: rgba(0, 0, 0, 0.03);
+ }
+
+  .flex-item {
+    display: none;
+    color: #000;
+  }
+  .flex-item.active {
+    display: block;
+    padding: 1em;
+  }
+  
+#queueSpace2{
+	border-left:3px solid #EEEEEE;
+}
+#hideButton, #showButton {
+	position:absolute; top:20px; right:30px;
+}
+.sorting,.sorting_asc, .sorting_desc {
+    content: "" !important;
+	background: transparent !important;
+}
+
+/*** ACCESSIBILITY STATEMENT ***/
+#accessibilityStatementDialogue.modalPage {
+	height: auto;
+}
+
+#accessibilityStatementDialogue .alR{
+	text-align: right;
+}
+
+
+#accessibilityStatementDialogue a{
+	font-weight: bold;
+	color: rgba(0, 121, 194, 1);
+}
+
+#accessibilityStatementDialogue a:hover, #accessibilityStatementDialogue a:focus{
+	text-decoration: underline !important;
+}
+
+#accessibilityStatementDialogue h2, #accessibilityStatementDialogue h3 {
+	text-align: left;
+	top: unset;
+	padding: 24px 0 0;
+	margin: 0;
+}
+
+#accessibilityStatementDialogue p {
+	margin: 4px 0;
+}

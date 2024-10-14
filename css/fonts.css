@@ -1,0 +1,9 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../assets/icons/icomoon.eot?ktia5d);
+    src: url(../assets/icons/icomoon.eot?ktia5d#iefix) format("embedded-opentype"), url(../assets/icons/icomoon.woff2?ktia5d) format("woff2"), url(../assets/icons/icomoon.ttf?ktia5d) format("truetype"),
+        url(../assets/icons/icomoon.woff?ktia5d) format("woff"), url(../assets/icons/icomoon.svg?ktia5d#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+

@@ -1,0 +1,288 @@
+button[tabindex="-1"]:focus {
+    outline: auto 1px -webkit-focus-ring-color !important;
+}
+.qm-btn--with-icon {
+    background: #ecfae5 !important;
+    border: none !important;
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.qm-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: 2px solid transparent;
+    padding: 0.5rem 2rem;
+    border-radius: 6.25rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: auto;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.qm-btn__icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.qm-btn__text:after {
+    display: block;
+    content: attr(title);
+    font-weight: 500;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.qm-btn:focus,
+.qm-btn:hover {
+    font-weight: 500;
+}
+.qm-btn[disabled] {
+    cursor: auto;
+}
+.qm-btn[disabled]:focus,
+.qm-btn[disabled]:hover {
+    font-weight: 300;
+}
+.qm-btn + .qm-btn {
+    margin-left: 1rem;
+}
+
+.qm-btn + .qm-btn--full,
+.qm-btn--full + .qm-btn {
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+.qm-btn--with-icon {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.qm-btn--full {
+    width: 100%;
+}
+.qm-btn--small {
+    font-size: 0.875rem;
+    padding: 0.375rem 1rem;
+}
+.qm-action-btn {
+    background: 0 0;
+    border: 0;
+    font-size: 0.875rem;
+    color: #0079c2;
+    font-weight: 300;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+}
+.qm-action-btn:hover {
+    font-weight: 500;
+    color: #175a83;
+}
+.qm-action-btn:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.4);
+    outline-offset: 5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.qm-action-btn:active {
+    outline: 0;
+    color: #092231;
+}
+.qm-action-btn[disabled] {
+    color: #092231;
+    cursor: auto;
+}
+.qm-action-btn[disabled]:focus,
+.qm-action-btn[disabled]:hover {
+    font-weight: 300;
+}
+.qm-action-btn + .qm-action-btn {
+    margin-left: 0.75rem;
+}
+
+.qm-action-btn__text {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.qm-action-btn__text:after {
+    display: block;
+    content: attr(title);
+    font-weight: 500;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.qm-action-btn--large {
+    font-size: 1.125rem;
+}
+.qm-action-btn--large .qm-action-btn__icon {
+    font-size: 2.25rem;
+}
+.qm-action-btn--huge {
+    font-size: 1.125rem;
+}
+.qm-action-btn--huge .qm-action-btn__icon {
+    font-size: 4.5rem;
+}
+.qm-action-btn--laying {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.qm-action-btn--laying .qm-action-btn__icon {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-right: 0.25rem;
+}
+.qm-action-btn--laying .qm-action-btn__text {
+    max-width: none;
+    font-size: 1rem;
+}
+.qm-action-btn--laying .qm-action-btn__text-black {
+    color: #000 !important;
+    max-width: none;
+    font-size: 1rem;
+}
+.qm-action-btn--only-icon .qm-action-btn__icon {
+    margin: 0;
+}
+.qm-card-action-layout-left .button-tooltip .qm-action-btn {
+    margin-right: 0.75rem;
+    margin-left: 0;
+}
+
+.qm-card-action-layout-right .button-tooltip + .qm-card-action-layout-right .button-tooltip .qm-action-btn {
+    margin-left: 0.75rem;
+    margin-right: 0;
+}
+.qm-cancel-btn-text {
+    color: #a71d3d;
+}
+
+.qm-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: calc(100vh - 300px);
+    background-color: #fff;
+    border-radius: 24px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 2.5rem 2rem 2rem;
+    word-break: break-word;
+}
+.qm-card__header-section {
+    margin-bottom: 1rem;
+}
+.qm-card__content-section {
+    margin-bottom: 1rem;
+}
+.qm-card__back-nav {
+    text-align: right;
+}
+.qm-card-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.qm-card-nav--popover {
+    /*padding: 0.5rem 0;*/
+}
+.qm-card-nav__left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+    height: 24px;
+}
+.qm-card-nav__middle {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0 8px;
+}
+.qm-card-nav__right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.qm-card-nav__title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.qm-popover .qm-card-nav__title {
+    color: #929596;
+    font-size: 1.3125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.qm-card-nav__back-btn .qm-action-btn__icon {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.5rem;
+}
+.qm-popover .qm-card-nav__back-btn .qm-action-btn__icon {
+    color: #175a83;
+}
+.qm-popover .qm-card-nav__close-btn .qm-action-btn__icon {
+    font-size: 1.5rem;
+}
+.qm-popover {
+    z-index: 110;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    border-radius: 16px;
+}
+.qm-popover__layout {
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border-radius: 16px;
+}
+.qm-popover__layout--flex-horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.qm-popover__content {
+    max-width: 340px;
+    width: 100%;
+}
+.qm-popover__content--narrow {
+	/*padding: 1.875rem 2.8125rem 3.125rem;*/
+    padding: 1.125rem 1.125rem 1.125rem;
+}
+.qm-popover__content .qm-table-filter {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    position: relative;
+}

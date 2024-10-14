@@ -1,0 +1,63 @@
+.tooltip {
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext, .tooltip .tooltiptextfirst, .tooltip .tooltiptextlast {
+    visibility: hidden;
+    width: 220px;
+    background-color: rgba(78, 78, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    border-radius: 8px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+   /*left: 75%;*/
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: smaller;
+	overflow:visible !important;
+  }
+  
+  .tooltip .tooltiptextfirst {
+
+  }
+
+  .tooltip .tooltiptextlast {
+	  margin-left: -300px;
+  }
+
+  
+  .tooltip .tooltiptext::after, .tooltip .tooltiptextfirst::after, .tooltip .tooltiptextlast::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    margin-left: -15px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent rgba(78, 78, 78, 1) transparent transparent;
+	font-weight:400;
+  }
+  
+  .tooltip .tooltiptextfirst::after {
+
+  }
+  
+.tooltip .tooltiptextlast::after {
+	left :228px;
+	margin-left: 15px;
+	border-color: transparent transparent transparent rgba(78, 78, 78, 1);
+  }
+  
+  
+  .tooltip:hover .tooltiptext, .tooltip:hover .tooltiptextfirst, .tooltip:hover .tooltiptextlast {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.dataTables_scrollHead {
+	overflow: visible !important;
+ }

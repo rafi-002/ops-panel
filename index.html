@@ -1,0 +1,1419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html class="notranslate" translate="no">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!--meta name="viewport" content="user-scalable=yes"/-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="viewport" content="width=1170, user-scalable=yes"/>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="googlebot" content="notranslate" />
+		<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+		<!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /-->
+
+		<title>Operations panel</title>
+		<link rel="stylesheet" type="text/css" href="css/fonts.css?20240806"/>
+		<link rel="stylesheet" type="text/css" href="assets/fonts_roboto.css?family=Roboto:100,300,400,500,700,900" />
+        <!--link rel="stylesheet" type="text/css" href="css/jquery/jquery.ui.all.css"/-->
+        <link rel="stylesheet" type="text/css" href="css/dataTable.css?20240806"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables-1.13.4.min.css?20240806">
+        <link rel="stylesheet" type="text/css" href="css/style.css?20240806"/>
+        <link rel="stylesheet" type="text/css" href="css/tooltip.css?20240806"/>
+		<link rel="stylesheet" type="text/css" href="css/multi-select.css?20240806">
+		<link rel="stylesheet" type="text/css" href="css/jquery-multi-select.css">
+		<link rel="stylesheet" type="text/css" href="css/experience.css?20240806">
+		<link rel="stylesheet" type="text/css" href="css/icons.css?20240806"/>
+		<link rel="stylesheet" type="text/css" href="css/bundle.css?20240806"/>
+		<link rel="stylesheet" href="css/tablesorter-theme.css?20240806">
+		<script type="text/javascript" src="scripts/jquery/jquery-3.6.1.min.js?20240806"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery.tablesorter.js?20240806"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery.tablesorter.widgets.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/moment.2.30.1.js"></script>
+		
+		<script type="text/javascript" src="scripts/jquery/jquery.i18n.properties.js?20240806"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery.multi-select.min.js?20240806"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery.multi-select-order.js?20240806"></script>
+		
+		<script type="text/javascript" src="scripts/i18n.js?20240806"></script>
+		<script type="text/javascript" src="scripts/i18n-util.js?20240806"></script>
+		<script type="text/javascript" src="scripts/tables.js?20240806"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery.dataTables.js?20240806"></script>
+		<script type="text/javascript" src="scripts/util.js?20240806"></script>
+		<script type="text/javascript" src="scripts/settings.js?20240806"></script>
+		<script type="text/javascript" src="scripts/restService.js?20240806"></script>
+
+		<script type="text/javascript" src="scripts/sessvars.js?20240806"></script>
+		<script type="text/javascript" src="scripts/script.js?20240311"></script>
+		<script type="text/javascript" src="scripts/region_branch.js?20240806"></script>
+		<script type="text/javascript" src="scripts/queue.js?20240806"></script>
+		<script type="text/javascript" src="scripts/servicepoint.js?20240806"></script>
+		<script type="text/javascript" src="scripts/feedback.js?20240806"></script>
+		<script type="text/javascript" src="scripts/webcam.js?20240806"></script>
+		<script type="text/javascript" src="scripts/queues.js?20240806"></script>
+		<script type="text/javascript" src="scripts/transfer.js?20240806"></script>
+		<script type="text/javascript" src="scripts/queue_servicepoint.js?20240806"></script>
+		
+		<script type="text/javascript" src="scripts/jquery/jquery.jqplot.min.js?20240806"></script>
+		<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery.jqplot.min.css?20240806" />
+
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.barRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.categoryAxisRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.pointLabels.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.enhancedLegendRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.dateAxisRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.canvasAxisLabelRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.canvasTextRenderer.js?20240806"></script>
+		<script class="include" type="text/javascript" src="scripts/plugin/jqplot.highlighter.js?20240806"></script>
+		
+		<script type="text/javascript" src="scripts/plugin/raphael.2.1.0.min.js?20240806"></script>
+		<script type="text/javascript" src="scripts/plugin/justgage.1.0.1a.js?20240806"></script>
+		<script type="text/javascript" src="scripts/graph.js?20240806"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/mktree.css?20240806"/>
+		<script type="text/javascript" src="scripts/mktree.js?20240806"></script>
+		<script type="text/javascript" src="scripts/nps.js?20240806"></script>
+		<script type="text/javascript" src="scripts/visibility.js?20240806"></script>
+</head>
+	
+<body>
+    <div id="containerWrapper">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div id="header" class="header">
+                     <table id="main-header-view" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+								<td id="header-start-orch" class="header-home" >
+									<a href="#" onclick="handleHome()" class="logo tr">
+										<img class="header-icon-home" src="images/iconhome.svg" alt="">
+									</a>
+								</td>
+								<td id="header-start-exp" class="header-start">
+									&nbsp;
+								</td>
+                                <td class="header-logo" >
+									<div>
+										<a id="homeLink" href="#" class="header-icons" onclick="handleHome()">
+											<img  src="images/brand_logo_header.png" class="logo" alt="">
+										</a>
+									</div>
+                                </td>
+                                <td class="header-title" >
+                                    <div id="appName" class="application-name" ></div>
+                                </td>
+								<td class="header-empty">
+									&nbsp;
+								</td>
+								<td>
+									<table id="header-actions">
+										<tr>
+											<td  id="exp-link-string" class="header-experience">
+												<a href="#" onclick="handleHome()" id="experienceLink" ></a>&nbsp;
+											</td>
+											<td id="exp-link-icon" class="header-icon" >
+												<a href="#" onclick="handleHome()" class="logo tr">
+													<img class="header-icon-exp" src="images/iconexperience.svg" alt="">
+												</a>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+											<td id="exp-link-spacer" >
+												<div class="header-spacer" ></div>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+											<td class="header-icon" >
+												<a href="#" onclick="showSearch();this.blur();" class="logo tr">
+													<img class="header-icon-search" src="images/iconsearch.svg" alt=""/>
+												</a>&nbsp;
+											</td>
+											<td class="header-search" >
+												<a href="#" id="searchLink" onclick="showSearch();this.blur();" >
+												</a>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>								
+											<td class="header-icon" >
+												<a href="#"  id="settingsAdminIcon" onclick="showAdminSettings();this.blur();">
+													<img class="header-icon-setting" src="images/iconmainsetting.svg" height="19.5px" alt="">
+												</a>&nbsp;
+											</td>
+											<td class="header-general" >
+												<a href="#" id="settingsAdminLink" onclick="showAdminSettings();this.blur();"></a>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+											<td class="header-icon" >
+												<a href="#"  onclick="util.showHelp()">
+													<img class="header-icon-help" src="images/iconhelp.svg" height="19.5px" alt="">
+												</a>&nbsp;
+											</td>											
+											<td class="header-help" >
+												<a href="#" id="helpLink" onclick="util.showHelp()"></a>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+											<td class="header-icon" >
+												<img class="header-icon-user" src="images/iconuser.svg" height="20px" alt="">&nbsp;
+											</td>											
+											<td class="header-user" >
+												<span id="userName"></span>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+											<td class="header-logout">
+												<div>
+													<a id="logout" href="/logout.jsp" class="header-icons" onclick="return handleLogout();">
+														<img class="header-icon-logout" src="images/iconlogout.svg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<div class="spacer" ></div>
+											</td>
+										</tr>
+									</table>
+							    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+		<div id="historyGraphcontainer">
+			<div id="historyPanel">
+				<table id="history">
+					<tr >
+						<td  class="historyHeader" onclick="loadData(0)">
+							<div id="historyHeader"></div>
+						</td>
+						<td align="right">
+							<select id="historyLength" onchange ="setHistoryLength()">
+								<option value="30">00:30</option>
+								<option value="60">01:00</option>
+								<option value="90">01:30</option>
+								<option selected value="120">02:00</option>
+								<option value="240">04:00</option>
+								<option value="480">08:00</option>
+								<option value="960">16:00</option>
+							</select>
+						</td>
+						<td width="35px" align="center">
+							<img src="images/close.png" onclick="loadData(0)">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" >
+							<div id="graphLines">
+								<div id="graphHistory"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="mainGraphcontainer">
+			<div id="graphPanel">
+				<table id="graph">
+					<tr >
+						<td colspan="8" class="graphHeader">
+							<div id="graphHeader"></div>
+							<div id="hideButton">
+								<a href="#" onclick="javascript:hideGraphContainer()" ><span><i id="hideGraph" class="hide-button" ></i></span></a>
+							</div>
+							<div id="showButton">
+								<a href="#" onclick="javascript:showGraphContainer()" ><span><i  id="showGraph" class="show-button" ></i></span></a>
+							</div>
+						</td>
+					</tr>
+					<tr id="trGraphs">
+						<td >
+							<div id="graphBar">
+								<div id="graphWaiting"></div>
+							</div>
+						</td>
+						<td>
+							<div id="gauge1"></div>
+						</td>
+						<td>
+							<div id="gauge2"></div>
+						</td>
+						<td >
+							<div id="gauge3"></div>
+						</td>
+						<td >
+							<div id="expressiaBar">
+								<div id="graphExpressia"></div>
+							</div>
+						</td>
+					</tr>
+					<tr id="trGraphsFooter">
+						<td colspan="5" class="branchPerc">
+							<div id="onlineBranchPerc"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+        <div id="mainDatacontainer">
+			<div class="panels">
+				<div id="regionPanel" class="panel">
+					<div class="panelHeader">
+						<table id="regionMenuTabs" width="100%">
+							<tr>
+								<td id="regionTab" class="linkactive" onclick="loadData(6)">
+									<a href="#" onclick="loadData(6)"><span id="regionRegionTitle"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="branchRegionTitle"></span></a>
+								</td>
+								<td id="appointTab" class="linkinactive" onclick="loadData(-1)"> 
+									<a href="#" onclick="loadData(-1)"><span id="appointRegionTitle"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="regionVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="regionVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="regionDensity" class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity()" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="regionDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="regionView" class="display">
+							<thead>
+								<tr>
+	
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="panels">
+				<div id="branchPanel" class="panel">
+					<div class="panelHeader">
+						<table id="branchMenuTabs" width="100%">
+							<tr>
+								<td id="regionBranchTab" class="linkinactive" onclick="loadData(6)">
+									<a href="#" onclick="loadData(6)"><span id="regionTitle">-</span></a>
+								</td>
+								<td class="linkactive" onclick="loadData(0)">
+									<a href="#" onclick="loadData(0)"><span id="branchTitle"></span></a>
+								</td>
+								<td id="appointTab" class="linkinactive" onclick="loadData(-1)">
+									<a href="#" onclick="loadData(-1)" ><span id="appointTitle"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="branchVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="branchVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="branchDensity"  class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity()" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="branchDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="branchView" class="display">
+							<thead>
+								<tr>
+
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="panels">
+				<div id="appointPanel" class="panel">
+					<div class="panelHeader">
+						<table width="100%">
+							<tr>
+								<td id="regionApptTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="regionTitleAppoint">-</span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="branchTitleAppoint"></span></a>
+								</td>
+								<td class="linkactive" onclick="loadData(-1)"> 
+									<a href="#" onclick="loadData(-1)"><span id="appointTitleAppoint"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="appointVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="appointVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="appointDensity" class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity()" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="appointDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="appointView" class="display">
+							<thead>
+								<tr>
+									<th id="branchAppointHeaderRegion"  width="40px" class="tooltip"></th>
+									<th id="branchAppointHeaderId" class="sorter-digit tooltip" width="10px"></th>
+									<th id="branchAppointHeaderName" class="sorter-text tooltip" width="200px"></th>
+									<th id="branchAppointHeaderBooked" class="tooltip"></th>
+									<th id="branchAppointHeaderArrived" class="tooltip"></th>
+									<th id="branchAppointHeaderPending" class="tooltip"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- queue and sp overview -->
+			<div class="panels">
+				<div id="queueSpPanel" class="panel">
+					<div class="panelHeader">
+						<table  id="queueSpMenuTabs" width="100%">
+							<tr>
+								<td id="queueServicePointRegionTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="queueSpTitleRegion"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="queueSpTitleBranch"></span></a>
+								</td>
+								<td id="queueQueueServicePointTab" class="linkactivexl" onclick="loadData(7)"> 
+									<a href="#" onclick="loadData(7)"><span id="queueSpTitleQueueServicepoint"></span></a>
+								</td>								
+								<td  class="linkinactive" onclick="loadData(1)"> 
+									<a href="#" onclick="loadData(1)"><span id="queueSpTitleQueue"></span></a>
+								</td>
+								<td id="queueSpServicePointTab" class="linkinactive" onclick="loadData(2)"> 
+									<a href="#" onclick="loadData(2)"><span id="queueSpTitleServicepoint"></span></a>
+								</td>
+								<td id="queueServicePointNpsTab" class="linkinactive"  onclick="loadData(3)"> 
+									<a href="#" onclick="loadData(3)"><span id="queueSpTitleNps"></span></a>
+								</td>
+								<td id="queueServicePointWebcamTab" class="linkinactive" onclick="loadData(4)"> 
+									<a href="#" onclick="loadData(4)"><span id="queueSpTitleWebcam"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="queueSpVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="queueSpVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="queueSpDensity" class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity();branchQueueSpOverview();" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="queueSpDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="xxxx" class="queueServicepointTable" >
+							<thead>
+								<tr>
+									<th id="queueSummaryHeaderQueueQueues"></th>
+									<th ></th><th ></th>
+									<th id="queueSummaryHeaderQueueSp"></th>
+								</tr>
+							</thead>
+							<tbody >
+								<tr class="alignTop">
+									<td >
+										<table id="queueQueueView" class="display">
+											<thead>
+												<tr>
+												</tr>
+											</thead>
+											<tbody class="alignMiddle">
+											</tbody>
+										</table>
+									</td>
+									<td id="queueSpace1">&nbsp;</td>
+									<td id="queueSpace2">&nbsp;</td>
+									<td> 
+										<table id="queueServicepointView" class="display">
+											<thead>
+												<tr>
+												</tr>
+											</thead>
+											<tbody class="alignMiddle">
+											</tbody>
+										</table>
+									</td>
+								</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<!-- queue overview -->
+			<div class="panels">
+				<div id="queuePanel" class="panel">
+					<div class="panelHeader">
+						<table  id="queueMenuTabs" width="100%">
+							<tr>
+								<td id="queueRegionTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="queueTitleRegion"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="queueTitleBranch"></span></a>
+								</td>
+								<td id="queueQueueServicePointTab" class="linkinactivexl" onclick="loadData(7)"> 
+									<a href="#" onclick="loadData(7)"><span id="queueTitleQueueServicepoint"></span></a>
+								</td>								
+								<td class="linkactive" onclick="loadData(1)"> 
+									<a href="#" onclick="loadData(1)"><span id="queueTitleQueue"></span></a>
+								</td>
+								<td id="queueServicePointTab" class="linkinactive" onclick="loadData(2)"> 
+									<a href="#" onclick="loadData(2)"><span id="queueTitleServicepoint"></span></a>
+								</td>
+								<td id="queueNpsTab" class="linkinactive" onclick="loadData(3)"> 
+									<a href="#" onclick="loadData(3)"><span id="queueTitleNps"></span></a>
+								</td>
+								<td id="queueWebcamTab" class="linkinactive" onclick="loadData(4)"> 
+									<a href="#" onclick="loadData(4)"><span id="queueTitleWebcam"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="queueVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="queueVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="queueDensity" class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity()" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="queueDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="queueView" class="display">
+							<thead>
+								<tr>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<!-- servicepoint overview -->
+			<div class="panels">
+				<div id="servicepointPanel" class="panel">
+					<div class="panelHeader">
+						<table  id="servicepointMenuTabs" width="100%">
+							<tr>
+								<td id="servicePointRegionTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="servicepointTitleRegion"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="servicepointTitleBranch"></span></a>
+								</td>
+								<td id="servicepointQueueServicePointTab" class="linkinactivexl" onclick="loadData(7)"> 
+									<a href="#" onclick="loadData(7)"><span id="servicepointTitleQueueServicepoint"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(1)"> 
+									<a href="#" onclick="loadData(1)"><span id="servicepointTitleQueue"></span></a>
+								</td>
+								<td  id="servicepointServicepointTab" class="linkactive" onclick="loadData(2)">
+									<a href="#" onclick="loadData(2)"><span id="servicepointTitleServicepoint"></span></a>
+								</td>
+								<td id="servicepointNpsTab" class="linkinactive" onclick="loadData(3)"> 
+									<a href="#" onclick="loadData(3)"><span id="servicepointTitleNps"></span></a>
+								</td>
+								<td  id="servicepointWebcamTab" class="linkinactive" onclick="loadData(4)"> 
+									<a href="#" onclick="loadData(4)"><span id="servicepointTitleWebcam"></span></a>
+								</td>
+								<td class="visibility">
+									<div id="servicepointVisibility" class="tooltip">
+										<a href="#" onclick="javascript:changeVisibilityTheme()" class="visibility-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="servicepointVisibilityToolTip"></span>
+									</div>
+								</td>
+								<td class="density">
+									<div id="servicepointDensity" class="tooltip">
+										<a href="#" onclick="javascript:saveTableDensity()" class="density-button"><span><i>&nbsp;&nbsp;</i></span></a>
+										<span class="tooltiptextlast" id="servicepointDensityToolTip"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="servicepointView" class="display">
+							<thead>
+								<tr>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<!-- nps overview -->
+			<div class="panels">
+				<div id="npsPanel" class="panel">
+					<div class="panelHeader">
+						<table  id="npsMenuTabs"  width="100%">
+							<tr>
+								<td id="npsRegionTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="npsTitleRegion"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="npsTitleBranch"></span></a>
+								</td>
+								<td id="npsQueueServicePointTab" class="linkinactivexl" onclick="loadData(7)"> 
+									<a href="#" onclick="loadData(7)"><span id="npsTitleQueueServicepoint"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(1)"> 
+									<a href="#" onclick="loadData(1)"><span id="npsTitleQueue"></span></a>
+								</td>
+								<td id="npsServicePointTab" class="linkinactive" onclick="loadData(2)"> 
+									<a href="#" onclick="loadData(2)"><span id="npsTitleServicepoint"></span></a>
+								</td>
+								<td  id="npsNpsTab" class="linkactive" onclick="loadData(3)"> 
+									<a href="#" onclick="loadData(3)"><span id="npsTitleNps"></span></a>
+								</td>
+								<td  id="npsWebCamTab" class="linkinactive" onclick="loadData(4)"> 
+									<a href="#" onclick="loadData(4)"><span id="npsTitleWebcam"></span></a>
+								</td>
+								<td class="none">
+									&nbsp;
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="npsView" class="display">
+							<tr align="center" >
+								<td width="50px">
+									&nbsp;
+								</td>
+								<td height="300px" width="450px">
+										<div id="gaugeNps1"></div>
+										<br>&nbsp;
+									
+								</td>
+								<td align="center" height="300px" width="450px">
+										<div id="gaugeNps2"></div><br>
+										<div id="serviceSelector"></div>
+									
+								</td>
+								<!--td >
+									<div id="graphBackground">
+										<br>
+										<div id="npsGraph" style="margin-top:0px; margin-left:20px; width:600px; height:300px;"></div>
+									</div>
+								</td-->
+								<td width="50px">
+									&nbsp;
+								</td>
+							</tr>
+					
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<!-- webcam overview -->
+			<div class="panels">
+				<div id="webcamPanel" class="panel">
+					<div class="panelHeader">
+						<table id="webcamMenuTabs" width="100%">
+							<tr>
+								<td id="webcamRegionTab" class="linkinactive" onclick="loadData(6)"> 
+									<a href="#" onclick="loadData(6)"><span id="webcamTitleRegion"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(0)"> 
+									<a href="#" onclick="loadData(0)"><span id="webcamTitleBranch"></span></a>
+								</td>
+								<td id="webcamQueueServicePointTab" class="linkinactivexl" onclick="loadData(7)"> 
+									<a href="#" onclick="loadData(7)"><span id="webcamTitleQueueServicepoint"></span></a>
+								</td>
+								<td class="linkinactive" onclick="loadData(1)"> 
+									<a href="#" onclick="loadData(1)"><span id="webcamTitleQueue"></span></a>
+								</td>
+								<td id="webcamServicePointTab" class="linkinactive" onclick="loadData(2)"> 
+									<a href="#" onclick="loadData(2)"><span id="webcamTitleServicepoint"></span></a>
+								</td>
+								<td id="webcamNpsTab"  class="linkinactive" onclick="loadData(3)"> 
+									<a href="#" onclick="loadData(3)"><span id="webcamTitleNps"></span></a>
+								</td>
+								<td id="webcamWebcamTab"  class="linkactive" onclick="loadData(4)"> 
+									<a href="#" onclick="loadData(4)" ><span id="webcamTitleWebcam"></span></a>
+								</td>
+								<td class="none">
+									&nbsp;
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panelContent">
+						<table id="webcamView" class="display">
+							<thead>
+								<tr align="center">
+									<th id="webcamHeaderId"  width="100%">&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="bottomSpaceOrch">&nbsp;</div>	
+			<div id="bottomSpaceExp">&nbsp;</div>
+		</div>
+
+	</div>	
+	<!-- disabled modal -->
+	<div id="disabledPage" class="modalPage">
+		<div class="modalContainer">
+			<div class="disabledModalForm roundedCorner5">
+				<h2 id="disabledBranchModal"></h2>
+				<div id="disabledBranchBody" class="inactive-data"></div>
+			</div>
+		</div>
+	</div>
+		
+		<div id="settingsAdminPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="settingsAdminForm roundedCorner5">
+					<h2 id="settingsAdminFormTitle"></h2>
+
+					<div class="flex-container">
+						<ul id="tabs">
+							<li data-tab="graph-content" href="#" class="active">
+							<a href="#" id="graph-tab"></a>
+							</li>
+							<li data-tab="general-content" href="#" class="inactive">
+							<a href="#" id="general-tab"></a>
+							</li>
+							<li data-tab="branch-content" href="#" class="inactive">
+							<a href="#" id="branch-tab"></a>
+							</li>
+							<li data-tab="queue-content" href="#" class="inactive">
+							<a href="#" id="queue-tab"></a>
+							</li>
+							<li data-tab="queueGroups-content" href="#" class="inactive">
+							<a href="#" id="queueGroups-tab"></a>
+							</li>
+							<li data-tab="servicepoint-content" href="#" class="inactive">
+							<a href="#" id="sp-tab"></a>
+							</li>
+							<li data-tab="queueSp-content" href="#" class="inactive">
+							<a href="#" id="queueSp-tab"></a>
+							</li>
+					  	</ul>
+
+						<div id="graph-content" class="flex-item active">
+							<table id="graph-table" class="display" >
+								<tr>
+									<td colspan="3" height="10px"></td>
+								</tr>
+								<tr class="addSpace">
+									<td height="10px"><span id="graphSettingTitle1"></span></td>
+									<td class="tdSettings"><span id="graphSettingGreen1"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueGreen1"></td>
+									<td class="tdSettings"><span id="graphSettingAmber1"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueAmber1"></td>
+									<td class="tdSettings"><span id="graphSettingRed1"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueRed1"></td>
+								</tr>
+								<tr class="addSpace">
+									<td height="10px"><span id="graphSettingTitle5"></span></td>
+									<td class="tdSettings"><span id="graphSettingGreen5"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueGreen5"></td>
+									<td class="tdSettings"><span id="graphSettingAmber5"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueAmber5"></td>
+									<td class="tdSettings"><span id="graphSettingRed5"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueRed5"></td>
+								</tr>
+								<tr class="addSpace">
+									<td  height="10px"><span id="graphSettingTitle2"></span></th>
+									<td class="tdSettings"><span id="graphSettingGreen2"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueGreen2"></td>
+									<td class="tdSettings"><span id="graphSettingAmber2"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueAmber2"></td>
+									<td class="tdSettings"><span id="graphSettingRed2"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueRed2"></td>
+								</tr>
+								<tr class="addSpace">
+									<td height="10px"><span id="graphSettingTitle3"></span></td>
+									<td class="tdSettings"><span id="graphSettingGreen3"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueGreen3"><span id="graphSetting3Perc1">%</span></td>
+									<td class="tdSettings"><span id="graphSettingAmber3"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueAmber3"><span id="graphSetting3Perc2">%</span></td>
+									<td class="tdSettings"><span id="graphSettingRed3"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueRed3"></td>
+								</tr>
+								<tr class="addSpace">
+									<td height="10px"><span id="graphSettingTitle4"></span></td>
+									<td class="tdSettings">	<span id="graphSettingRed4"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueRed4"><span id="graphSetting4Perc1">%</span></td>
+									<td class="tdSettings"><span id="graphSettingAmber4"></span></td>
+									<td class="tdSettings"><input type="number" size="3" id="graphValueAmber4"><span id="graphSetting4Perc2">%</span></td>
+								</tr>
+								<tr>
+									<td colspan="3" height="10px"></td>
+								</tr>
+							</table>
+						</div>
+						<div id="general-content" class="flex-item">
+							<table id="general-table" class="display">
+							</table>
+						</div>
+						<div id="branch-content" class="flex-item">
+							<table id="branch-table" class="display">
+							</table>
+						</div>
+						<div id="queue-content" class="flex-item">
+							<table id="queue-table" class="display">
+							</table>
+						</div>
+						<div id="queueGroups-content" class="flex-item">
+							<table id="queueGroups-table" width="100%">
+								<tr height="30px">
+									<td width="20">&nbsp;&nbsp;</td>
+									<td width="120" align="right"><span id="branchSelectQueueGroup" class="labelItem"></span>:&nbsp;&nbsp;</td>
+									<td>
+										<select id="branchesQueueGroup" onchange = "javascript:saveToQueueGroupVar(false)"></select>
+									</td>
+									<td width="20">&nbsp;&nbsp;</td>
+									<td>
+										<div id="addGroupDiv">
+											<input type="button" id="addGroupBt" onclick="javascript:addQueueGroup();"></input>
+										</div>
+									<td>
+								</tr>
+								<tr height="20px">
+									<td width="20">&nbsp;&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="5">
+										<table width="100%" id="queueGroupView" class="queueGroupView"  border="0">
+											<thead>
+												<tr>
+													<th id="queueGroupName"  width="100px"></th>
+													<th id="queueGroupQueues" width="400px"></th>
+													<th id="queueGroupActions" width="100px"></th>
+												</tr>
+											</thead>
+										</table>
+									</td>
+								</tr>
+								<tr height="30px">
+									<td width="20">&nbsp;&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						<div id="servicepoint-content" class="flex-item">
+							<table id="sp-table" lass="display">
+							</table>
+						</div>
+						<div id="queueSp-content" class="flex-item">
+							<table id="queueSp-table" class="display">
+							</table>
+						</div>
+						<div colspan="2" align="center">
+							<input type="buttonCancel" id="settingsFormCancel" onclick="javascript:util.hideModal('settingsAdminPage');"></input>
+							<input type="button" id="adminSettingsFormOK" style="display: none;" onclick="javascript:saveAdminSettings(true, false);"></input>
+							<input type="button" id="settingsFormOK" onclick="javascript:saveSettings();"></input>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="queueGroupsEditPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="queueGroupsEditForm roundedCorner5">
+					<h2 id="queueGroupsEditFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr height="30px">
+							<td width="20">&nbsp;&nbsp;</td>
+							<td width="120" align="right"><span id="queueGroupNameLabel" class="labelItem"></span></td>
+							<td width="20">&nbsp;</td>
+							<td width="20" align="left"><input id="queueGroupEditValue"></td>
+						</tr>
+						<tr height="30px">
+							<td width="20">&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td width="120" align="right">
+								<span id="includedViewQueues" class="labelItem">Queues</span>
+							</td>
+							<td width="20">&nbsp;</td>
+							<td >
+								<div id='queues'> </div>
+							</td>
+						</tr>
+						<tr height="30px">
+							<td width="20">&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="5" align="center">
+								<input type="button" id="saveEditGroupOK" onclick="javascript:saveQueueGroupEdit();" ></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+
+		<!-- profile selection modal -->
+		<div id="profileSelectPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="profileForm roundedCorner5">
+					<h2 id="profileFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px"></td>
+						</tr>
+						<tr height="30px">
+							<td width="20">&nbsp;&nbsp;</td>
+							<td width="120" align="right"><span id="profileSelect"></span>:&nbsp;&nbsp;</td>
+							<td>
+								<select id="profiles"></select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="40px"></td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td colspan="2" align="center">
+								<input type="button" class="button" id="profileFormOK" onclick="javascript:setProfile();"></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+
+		<!-- logout user modal -->
+		<div id="userLogoutPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="userLogoutForm roundedCorner5">
+					<h2 id="userLogoutFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px"><br>
+								<div id="userLogoutFormWarning"></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="40px"></td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td colspan="2" align="center">
+								<input type="button" class="button" id="userLogoutOK" onclick="javascript:logoutUser();"></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+		
+				<!-- remove confirm modal -->
+		<div id="visitRemovePage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="visitRemoveForm roundedCorner5">
+					<h2 id="visitRemoveFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px"><br>
+								<div id="visitRemoveFormWarning"></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="40px"></td>
+						</tr>
+						<tr>
+							<td align="center">
+								<input type="button" class="button" id="visitRemoveCancel" onclick="javascript:util.hideModal('visitRemovePage');;"></input>
+							</td>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td align="center">
+								<input type="button" class="button" id="visitRemoveOK" onclick="javascript:queues.removeVisitConfirm();"></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- remove multiple visits confirm modal -->
+		<div id="visitsRemovePage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="visitsRemoveForm roundedCorner5">
+					<h2 id="visitsRemoveFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px"><br>
+								<div id="visitsRemoveFormWarning"></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="40px"></td>
+						</tr>
+						<tr>
+							<td align="center">
+								<input type="button" class="button" id="visitsRemoveCancel" onclick="javascript:util.hideModal('visitsRemovePage');;"></input>
+							</td>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td align="center">
+								<input type="button" class="button" id="visitsRemoveOK" onclick="javascript:queues.removesVisitConfirm();"></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- access rights modal -->
+		<div id="accessRightsPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="accessRightsForm roundedCorner5">
+					<h2 id="accessRightsFormTitle">&nbsp;</h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px">
+								<div id="accessRightsContent"> </div>
+							
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="40px"></td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td colspan="2" align="center">
+								<input type="button" class="button" id="opspanelClose" onclick="javascript:handleHome()"></input>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>	
+		</div>
+
+		<!-- web cam view  -->
+		<div id="webCamPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="webCamForm roundedCorner5">
+					<h2 id="webCamFormTitle">Web Cam</h2>
+					<br>
+						<div id="webCamScr"></div>
+					<br>
+					<input type="button" class="button" id="webCamClose" onclick="javascript:hideCam();"></input>
+					
+				</div>
+			</div>	
+		</div>
+
+		<!-- search ticket modal -->
+		<div id="searchTicketPage" class="modalPage">
+			<div class="modalOpacityDiv"></div>
+			<div class="modalContainer">
+				<div class="searchForm roundedCorner5">
+					<h2 id="searchFormTitle"></h2>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" height="10px"></td>
+						</tr>
+						<tr height="30px">
+							<td width="20">&nbsp;&nbsp;</td>
+							<td width="120" align="right"><span id="branchSelectSearch"></span>:&nbsp;&nbsp;</td>
+							<td>
+								<select id="branchesSearch"></select>
+							</td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+							<td width="120" align="right"><span id="ticketSearch"></span>:&nbsp;&nbsp;</td>
+							<td height="40px">
+								<input size="4" id="searchTicketInput" type="text">
+							</td>
+							<td height="40px">
+								<input type="button" class="button" id="searchFormSearch" onclick="javascript:queues.searchTicket();"></input>
+							</td>
+						</tr>
+						<tr>
+						<td colspan="4">
+						 <table id="searchTickets" class="display dataTable" cellpadding="0" cellspacing="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th id="searchTicketId"></th>
+                                    <th id="searchActions"></th>
+									<th id="searchNotes"></th>
+									<th id="searchQueue"></th>
+									<th id="searchService"></th>
+									<th id="searchAppointTime"></th>
+                                    <th id="searchWaitingTime"></th>
+									<th id="searchCustomerName"></th>
+									
+                                </tr>
+                            </thead>
+                            <tbody>
+								<tr class="odd">
+									<td class="firstColumn" id="foundTicketId"></td>
+									<td class="actionColumn"  id="foundActions"></td>
+									<td class="notesColumn"  id="foundNotes"></td>
+									<td class="middleColumn"  id="foundQueue"></td>
+									<td class="middleColumn"  id="foundService"></td>
+									<td class="lastColumn"  id="foundAppointTime"></td>
+									<td class="lastColumn"  id="foundWaitingTime"></td>
+									<td class="middleColumn"  id="foundCustomerName"></td>
+									
+									
+								</tr>
+							</tbody>
+                        </table>
+						</td>
+						</tr>
+						<tr>
+							<td width="20">&nbsp;&nbsp;</td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</div>
+
+		<!-- tickets list modal -->		
+        <div id="ticketsDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+                <div class="modalContainer">
+                    <div class="ticketsForm roundedCorner5">
+                        <!-- The close button is added in script.js -->
+                        <h2 id="ticketListHeader"></h2>
+                        <table id="tickets" class="display">
+                            <thead>
+                                <tr>
+                                    <th id="ticketVisitId"></th>
+                                    <th id="ticketTicketId"></th>
+									<th id="ticketActions"></th>
+									<th id="ticketNotes"></th>
+									<th id="ticketService"></th>
+									<th id="ticketAppointTime"></th>
+                                    <th id="ticketWaitingTime"></th>
+									<th id="ticketCustomerName"></th>
+									
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+		<div id="branchTicketsDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+                <div class="modalContainer">
+                    <div class="ticketsForm roundedCorner5">
+                        <!-- The close button is added in script.js -->
+                        <h2 id="branchTicketListHeader"></h2>
+                        <table id="branchTickets" class="display">
+                            <thead>
+                                <tr>
+                                    <th id="branchTicketVisitId"></th>
+                                    <th id="branchTicketTicketId"></th>
+									<th id="branchTicketActions"></th>
+									<th id="branchTicketNotes"></th>
+									<th id="branchTicketService"></th>
+									<th id="branchTicketAppointTime"></th>
+                                    <th id="branchTicketWaitingTime"></th>
+									<th id="branchTicketCustomerName"></th>
+									
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>				
+
+		<div id="poolTicketsDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+                <div class="modalContainer">
+                    <div class="ticketsForm roundedCorner5">
+                        <!-- The close button is added in script.js -->
+                        <h2 id="poolTicketListHeader"></h2>
+                        <table id="poolTickets" class="display">
+                            <thead>
+                                <tr>
+                                    <th id="poolTicketVisitId"></th>
+                                    <th id="poolTicketTicketId"></th>
+									<th id="poolTicketActions"></th>
+									<th id="poolTicketNotes"></th>
+									<th id="poolTicketService"></th>
+									<th id="poolTicketAppointTime"></th>
+                                    <th id="poolTicketWaitingTime"></th>
+									<th id="poolTicketCustomerName"></th>
+									
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>	
+
+       <!-- Transfer queue select dialogue -->
+        <div id="transferToQueueDialogue" class="modalPopup">
+			<div class="transferPopup roundedCorner5">
+				<div class="qm-popover-transfer-selection">
+					<div class="qm-popover__layout">
+						<div class="qm-card-nav qm-card-nav--popover">
+							<div class="qm-card-nav__left">
+								<button class="qm-action-btn qm-action-btn--only-icon qm-card-nav__back-btn js-popover-back" onclick="javascript:util.hideModal('transferToQueueDialogue');" >
+									<i class="qm-action-btn__icon icon-caret-left" aria-hidden="true"></i> 
+								</button>
+							</div>
+							<div class="qm-card-nav__middle">
+								<h1 class="qm-card-nav__title js-popover-transfer-header"  id="transferPopupTitle"></h1>
+							</div>
+						</div>
+						<div class="qm-popover__content qm-popover__content--narrow">
+							<button class="qm-btn qm-btn--secondary qm-btn--full qm-btn--with-icon js-popover-transferToQueue" onclick = "javascript:transfer.toQueueClicked()">
+								<i class="qm-btn__icon icon-queue" aria-hidden="true"></i> 
+								<span class="qm-btn__text" title="Transfer to queue" id="transferPopupQueueBtn"></span>
+							</button> 
+							<button class="qm-btn qm-btn--secondary qm-btn--full qm-btn--with-icon js-popover-transferToUserPool" onclick = "javascript:transfer.toStaffClicked()">
+								<i class="qm-btn__icon icon-customer-solid" aria-hidden="true"></i> 
+								<span class="qm-btn__text" title="Transfer to staff member" id="transferPopupStaffBtn"></span>
+							</button> 
+							<button class="qm-btn qm-btn--secondary qm-btn--full qm-btn--with-icon js-popover-transferToCounterPool" onclick = "javascript:transfer.toServicePointClicked()">
+								<i class="qm-btn__icon icon-screen" aria-hidden="true"></i>
+								<span class="qm-btn__text" title="Transfer to counter pool" id="transferPopupSpBtn"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>	
+		
+       <!-- Transfer queue to queue dialogue -->
+        <div id="transferQueueToQueueDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+            <div class="modalContainer">
+                <div class="transferForm roundedCorner5">
+                    <h2 id="transferFromQueueHeader"></h2>
+                    <table id="transferTicketQueueToQueueTable" class="display margin-top" cellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                        <tr>
+                            <th id="transferQueueToQueueQueueName" class="transferQueueName"></th>
+                            <th id="transferQueueToQueueQueueActions" class="transferQueueActions"></th>
+                            <th id="transferQueueToQueueQueueId"></th>
+                            <th id="transferQueueToQueueQueueWaitingTime" class="transferQueueWaitingTime"></th>
+                            <th id="transferQueueToQueueQueueCustomersWaiting" class="transferQueueCustomerWaiting"></th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>	
+		
+       <!-- Transfer queue to staff dialogue -->		
+        <div id="transferQueueToStaffPoolDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+            <div class="modalContainer">
+                <div class="transferFormStaff roundedCorner5">
+                    <h2 id="transferFromStaffPoolHeader"></h2>					
+						<table id="transferQueueToStaffPoolTable" class="display margin-top" cellpadding="0" cellspacing="0" border="0">
+							<thead>
+							<tr>
+								<th id="transferQueueToStaffPoolStaffId"></th>
+								<th id="transferQueueToStaffPoolStaffUserName" class="transferStaffPoolUserName"></th>
+								<th id="transferQueueToStaffPoolActions" class="transferStaffPoolActions"></th>
+								<th id="transferQueueToStaffPoolStaffFirstName" class="transferStaffPoolFirstName"></th>
+								<th id="transferQueueToStaffPoolStaffLastName" class="transferStaffPoolLastName"></th>
+								<!--th id="transferQueueToStaffPoolStaffLocale"></th-->
+								<!--th id="transferQueueToStaffPoolStaffDirection"></th-->
+							</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+                </div>
+            </div>
+        </div>
+		
+		<!-- Transfer queue to servicepoint dialogue -->
+        <div id="transferQueueToServicePointPoolDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+            <div class="modalContainer">
+                <div class="transferFormSp roundedCorner5">
+                    <h2 id="transferFromServicePointPoolHeader"></h2>					
+						<table id="transferQueueToServicePointPoolTable" class="display margin-top" cellpadding="0" cellspacing="0" border="0">
+							<thead>
+							<tr>
+								<th id="transferQueueToServicePointPoolName" class="transferServicePointPoolName"></th>
+								<th id="transferQueueToServicePointPoolActions" class="transferServicePointPoolActions"></th>
+								<th id="transferQueueToServicePointPoolId"></th>
+								<th id="transferQueueToServicePointPoolUnitId"></th>
+								<th id="transferQueueToServicePointPoolState" class="transferServicePointPoolState"></th>
+								<th id="transferQueueToServicePointPoolParameters"></th>
+							</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+                </div>
+            </div>
+        </div>
+
+		<div id="accessibilityStatementDialogue" class="modalPage">
+            <div class="modalOpacityDiv"></div>
+            <div class="modalContainer">
+                <div class="accessibilityDialog roundedCorner5">
+					<div class="alR"><a href="#" id="accessibilityStatementClose1" onclick="javascript:util.hideModal('accessibilityStatementDialogue');">X</a></div>
+                    <h1 id="accessibilityStatementHeader">Accessibility Statement</h1>
+					<p>This accessibility statement applies to the Operations Panel staff user application.</p>
+					<p>This application is run by Qmatic. We want as many people as possible to be able to use this application. For example, that means you should be able to: 
+						<ul>
+							<li>zoom in up to 175% without the text spilling off the screen</li>
+							<li>use the application using just a keyboard</li>
+							<li>view the application on your preferred device in both horizontal and vertical orientation without losing content</li>
+						</ul>
+						We've also made the application's text as simple as possible to understand. AbilityNet has advice on making your device easier to use if you have a disability.
+					</p>
+					<h2>How accessible this application is </h2>
+					<p>This application intends to support up to WCAG Level AA only. 
+					We know some parts of this website are not fully accessible: 
+
+						<ul>
+							<li>Every screen reader doesn't fully support every major browser. To get the best screen reader capability, recommended screen reader should be used according to the browser</li>
+							<li>According to the native behavior of the browser, keyboard keys need to be used to navigate can differ. As an example, when selecting items in a list, some browsers accept space bar, and some browsers accept the enter key</li> 
+							<li>Zoom in on average supports up to 175%. That depends on the devices' display aspect ratio</li> 
+						</ul>
+					</p>
+
+					<h2>Reporting accessibility problems with this website</h2>
+					<p>We're always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we're not meeting accessibility requirements, contact us by:  
+
+					<ul>
+						<li>Sending an email with your feedback to: accessibility@qmatic.com</li>
+					</ul>
+
+					We will get back to you with an answer and planned action regarding the feedback in 30 days.
+					</p>  
+
+
+					<h3>TECHNICAL INFORMATION ABOUT THIS WEBSITE'S ACCESSIBILITY</h3>
+					<p>Qmatic is committed to making its applications accessible, in accordance with the European standard for accessibility requirements when procuring IT products and services, EN 301 549 V2.1.2. We will do this by following the recommendations in the Web Content Accessibility Guidelines version 2.1.</p> 
+					
+					<h2>Compliance status </h2>
+					<p>This website is partially compliant with the Web Content Accessibility Guidelines version 2.1 AA standard, due to the non-compliances and exceptions listed below. </p>
+
+					<h3>NON-ACCESSIBLE CONTENT</h3>
+					<p>See the "How accessible this application is" section for an overview. </p> 
+
+					<h2>Non-compliance with the accessibility regulations </h2>
+					<p>In tests performed April 2024, the following issues have been found: 
+						<ul>
+							<li>Keyboard navigation: Some functions are not reachable via keyboard only. Some functions are not accessible via keyboard in a logical order or keyboard focus indicator is sometimes missing or unclear.</li>
+							<li>The target of links is clearly stated in context</li>
+							<li>Text that visually function as a heading is coded as a heading, is not always logical or representing the hierarchy of the content</li>
+							<li>Equivalent text descriptions are present for all meaningful graphical elements on the website</li>
+							<li>The alternative text does not always describe the image or the purpose of the image</li>
+							<li>Focus issues when modals or areas are loaded.</li> 
+							<li>Screen reader: Some texts, buttons, and headings, are not read by screen readers.</li> 
+							<li>Contrast ratio: There can still be some places where the correct contrast ratio has not been matched.</li>  
+							<li>Missing some labelled instructions that describe how to complete forms. Missing labels linked to corresponding form object</li>
+							<li>Missing some headings for tables coded with the caption element</li>
+							<li>Missing some wai-aria in order to convey information that cannot be conveyed through the use of HTML and that benefits us</li>
+						</ul>
+					</p>
+					
+					<p>Due to above issues, the following WCAG 2.1 AA success criteria fail: 
+						<ul>
+							<li>Guideline 2.1 Keyboard Accessible 
+							<li>Success Criterion
+								<ul>
+									<li>1.1.1 Non-text Content</li>
+									<li>1.3.1 Info and Relationships </li>
+									<li>1.4.10 Reflow</li>
+									<li>2.4.3 Focus Order </li>
+									<li>2.4.4 Link Purpose (in Context)</li>
+									<li>2.4.7 Focus Visible</li>
+									<li>3.2.1 On Focus</li>
+									<li>3.2.2 On Input</li>
+									<li>3.3.1 Error Indentification</li>
+									<li>3.3.2 Labels or Instructions</li>
+									<li>4.1.2 Name, Role, Value</li>
+								</ul>
+							</li>
+						</ul>
+						Qmatic is committed to improve the accessibility of this application. The aim is to resolve the issues identified during 2024 and 2025.
+					</p>
+
+
+					<h3>WHAT WE'RE DOING TO IMPROVE ACCESSIBILITY </h3>
+					<p>To improve accessibility, we will continuously evaluate the accessibility status and try to make the non-accessible content compliant, according to the Qmatic Accessibility policy.</p>
+
+					<h3>PREPARATION OF THIS ACCESSIBILITY STATEMENT</h3> 
+					<p>This statement was prepared on 2024-04-10.</p>
+					<div class="alR"><a id="accessibilityStatementClose1" onclick="javascript:util.hideModal('accessibilityStatementDialogue');">X</a></div>
+				</div>
+            </div>
+        </div>
+
+		<div id="message"></div>
+
+        <div id="error"></div>
+		<div id="uttError"></div>
+		
+		<div id="footerContent" class="footer navbar-fixed-bottom">
+			<p id="footerVersion"></p>
+			<a href="#" class="wcag-statement-link" onclick="javascript:util.showModal('accessibilityStatementDialogue');">Accessibility statement</a>
+		</div>
+	
+</body>
+</html>
+		

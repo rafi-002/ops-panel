@@ -1,0 +1,20 @@
+#cfuGraphPanel { margin:10px 0 0 310px; }
+#cfuGraphPanel .panelHeader select { float:right; position:relative; top:-2px; }
+#cfuLabels { position:absolute; width:410px; top:200px; z-index:200; color:#fff; }
+#cfuLabels table { width:100%; table-layout: fixed; border-collapse: collapse; }
+#cfuLabels td { text-align: center; vertical-align: middle; }
+.cfuImage { margin-bottom:5px; height:40px; width:40px; vertical-align:middle; }
+
+/*visualize extension styles*/
+.visualize { /*margin: 60px 0 0 30px;*/ padding: 70px 40px 90px; background: #000; border: 1px solid #fff; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; }
+.visualize canvas { background: #000; }
+.visualize-labels-x, .visualize-labels-y { border-bottom: 1px solid #aaa; top: 70px; left: 40px; z-index: 100; }
+.visualize-pie .visualize-labels { position: absolute; top: 70px; left: 40px; }
+.visualize-labels-x li span.label, .visualize-labels-y li span.label { color: #fff; font-size: 1.3em; /*padding-right: 5px;*/ }
+.visualize-labels-y li span.line { border-style: solid;  opacity: .7; }
+.visualize .visualize-info { border: 0; position: static;  opacity: 1; background: none; }
+.visualize .visualize-title { position: absolute; top: 20px; color: #fff; margin-bottom: 0; left: 20px; font-size: 2.1em; font-weight: bold; }
+.visualize ul.visualize-key { position: absolute; top: 200px; background: #000; z-index: 10; padding: 10px 0; color: #aaa; width: 100%; left: 30px;  }
+.visualize ul.visualize-key li { font-size: 1.2em;  margin-left: 20px; padding-left: 18px; }
+.visualize ul.visualize-key .visualize-key-color { display:none; width: 10px; height: 10px;  margin-top: -4px; }
+.visualize ul.visualize-key .visualize-key-label { color: #fff; }

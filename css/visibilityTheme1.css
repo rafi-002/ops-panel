@@ -1,0 +1,74 @@
+td.alert_green, td.alert_yellow, td.alert_orange, td.alert_red, td.alert_none,  td.alert_0, td.alert_1, td.alert_2, td.alert_3{
+	width:110px;
+ }
+ 
+ .alert_green, .alert_0{
+	background-color: transparent !important;
+	background-image: url("../images/icon_alert_green.png");
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 85% !important;
+ }
+   
+ .alert_yellow, .alert_1{
+	background-image: url("../images/icon_alert_orange_18.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 85% !important;
+	border-right-style:solid !important;
+	border-right-color:#F4812F !important;
+ }
+ 
+ .alert_orange, .alert_2 {
+	background-image: url("../images/icon_alert_orange_18.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 85% !important;
+	border-right-style:solid !important;
+	border-right-color:#F4812F !important;
+}
+ 
+ .alert_red, .alert_3{
+	background: #FAD7DF !important;
+	background-image: url("../images/icon_alert_red_18.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 85% !important;
+	border-right-style:solid !important;
+	border-right-color:#BE193D !important;
+ }
+ 
+ tr.region, tr.group {
+    background: #F1F8F8 !important;
+}
+
+.status_0{
+	background-color: transparent !important;
+	background-image: url("../images/icon_status_green.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 50% !important;
+}
+
+.status_3{
+	background-color: transparent !important;
+	background-image: url("../images/icon_status_red.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom 50% left 50% !important;	
+}
+
+.labelMedium {
+    color: #005C9E !important;
+}
+
+.visibility-button{
+	background-repeat: no-repeat !important;
+	font-size: 40px !important;
+	background-image: url("../images/disable_colorblind_mode.svg") !important;
+	background-size: 90% !important;
+}
+
+tr.region, .regionName, .groupName {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+#regionView tr.region {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}

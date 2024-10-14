@@ -1,0 +1,42 @@
+th {
+	height:52px;
+	font-weight: 500 !important;
+	font-size: 14px;
+	line-height: 20px  !important;
+}
+
+.queueServicepointTable th {
+	height:40px;
+}
+
+tr.odd, tr.even, tr.region, tr.regionExpanded, tr.group, tr.groupExpanded {
+    height: 52px  !important;
+}
+
+tr.odd td, tr.even td, tr.group td{
+	 height: 52px !important;
+}
+
+tfoot {
+    height: 52px !important;
+}
+
+tr.even {
+	background-color :transparent !important;
+}
+
+a.density-button{
+	background-image: url("../images/densityhighselected.svg");
+}
+
+a.density-button:hover{
+	background-image: url("../images/densityhighhover.svg");
+}
+
+a.density-button:active{
+	background-image: url("../images/densityhighpress.svg");
+}
+
+.qm-action-btn__icon {
+    font-size: 1.75rem;
+}

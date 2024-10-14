@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Build-Date: 2024-08-06
+Product-Name: Operations Panel
+Build-Version: 7.4.10
+
